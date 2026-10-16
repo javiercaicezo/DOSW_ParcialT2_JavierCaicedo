@@ -1,0 +1,10 @@
+package edu.eci.dosw.parcial.repository;
+
+import edu.eci.dosw.parcial.user_service.model.document.ImagenDocument;
+
+import java.util.List;
+
+public interface TutorRepository extends PostgreSQLRepository<Tutor, String> {
+
+    List<User> findByID(Integer ID);
+}
